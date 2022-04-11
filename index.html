@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slick.js fade</title>
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+        }
+        
+        #slider {
+            width: 50%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>slick.js fade</h1>
+    </header>
+    <section>
+        <div id="slider">
+            <div class="img">
+                <img src="./img/pic001.jpg">
+            </div>
+            <div class="img">
+                <img src="./img/pic002.jpg">
+            </div>
+            <div class="img">
+                <img src="./img/pic003.jpg">
+            </div>
+            <div class="img">
+                <img src="./img/pic004.jpg">
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="./slick/slick.min.js "></script>
+    <script type="text/javascript">
+        $('#slider').slick({
+            infinite: true,
+            speed: 1000,
+            fade: true,
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 3500,
+            arrows: true,
+            dots: true,
+        });
+    </script>
+</body>
+
+</html>
